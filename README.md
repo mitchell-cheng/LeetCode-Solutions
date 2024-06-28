@@ -9,3 +9,5 @@ Solutions for leetcode problems.
 ## Subjects supported
 * Array & Hashing
 * Matrix
+* String
+* Stack
