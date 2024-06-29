@@ -1,5 +1,5 @@
 # LeetCode-Solutions
-Solutions for leetcode problems.
+Record the LeetCode problems I have solved.
 
 ## Languages supported:
 * JavaScript
