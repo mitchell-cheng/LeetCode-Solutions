@@ -12,3 +12,4 @@ Record the LeetCode problems I have solved.
 * String
 * Stack
 * Queue
+* Binary Search
