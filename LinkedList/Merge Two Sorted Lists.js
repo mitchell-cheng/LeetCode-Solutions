@@ -1,15 +1,21 @@
 /**
- * https://leetcode.com/problems/merge-two-sorted-lists/
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
  * @param {ListNode} list1
  * @param {ListNode} list2
  * @return {ListNode}
  */
 
 // Time: O(n) | Space: O(1)
-function mergeTwoLists(list1, list2) {
+var mergeTwoLists = function(list1, list2) {
   const dummy = new ListNode(0, null);
   let curr = dummy;
-  
+
   while (list1 && list2) {
     if (list1.val < list2.val) {
       curr.next = list1;
@@ -22,7 +28,7 @@ function mergeTwoLists(list1, list2) {
     curr = curr.next;
   }
 
-  curr.next = list1 || list2;
+  curr.next = list1 ?? list2;
 
-  return dummy.next;
+  return dummy.next;   
 };
