@@ -38,6 +38,11 @@ var mergeKLists = function(lists) {
   while (lists.length > 1) {
     const list1 = lists.shift();
     const list2 = lists.shift();
+    // Or
+    /*
+      const list1 = lists.pop();
+      const list2 = lists.pop();
+    */
     const mergedList = mergeTwoLists(list1, list2);
     lists.push(mergedList);
   }

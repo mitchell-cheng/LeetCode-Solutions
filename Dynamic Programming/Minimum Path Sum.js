@@ -18,7 +18,7 @@ function minPathSum(grid) {
 
   for (let i = 1; i < m; i += 1) {
     for (let j = 1; j < n; j += 1) {
-      grid[i][j] = Math.min(grid[i - 1][j], grid[i][j - 1]);
+      grid[i][j] += Math.min(grid[i - 1][j], grid[i][j - 1]);
     }
   }
 
